@@ -48,6 +48,9 @@ resource "scalr_workspace" "me" {
   name = "ws_from_scalr_provider${count.index}"
   environment_id = var.environment_id
   auto_apply = true
-  vcs_repo = var.vcs_repo
+  vcs_repo {
+    identifier = var.vcs_repo.identifier
+    branch = var.vcs_repo.branch
+  }
   vcs_provider_id = scalr_vcs_provider.vcs.id
 }
