@@ -5,7 +5,7 @@ terraform {
   required_providers {
     scalr = {
       source = "registry.scalr.io/scalr/scalr"
-      version = "latest"
+      version= "1.0.0-rc25"
     }
   }
 }
