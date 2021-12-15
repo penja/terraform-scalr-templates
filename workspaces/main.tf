@@ -40,6 +40,7 @@ resource "scalr_vcs_provider" "vcs" {
   name = "vcs_from_scalr_provider"
   account_id = var.account_id
   vcs_type="github"
+  token = var.github_token
 }
 
 resource "scalr_workspace" "me" {
