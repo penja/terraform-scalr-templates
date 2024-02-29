@@ -1,1 +1,1 @@
-foo = var_file
+foo = "var_file"
