@@ -1,5 +1,5 @@
 variable "foo" {
-  default = "bar"
+
 }
 
 resource null_resource "always"{
