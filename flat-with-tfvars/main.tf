@@ -1,4 +1,5 @@
-variable "foo" {}
+variable "foo" {
+}
 
 resource null_resource "always"{
   triggers = {
